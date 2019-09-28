@@ -15,4 +15,3 @@ req = requests.put(f"https://api.cloudflare.com/client/v4/accounts/{os.environ['
 print(req.text)
 req.raise_for_status()
 print("Done!")
-
