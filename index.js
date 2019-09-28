@@ -33,4 +33,3 @@ async function handleRequest(request) {
     return new Response("Link not found.", { status: 404 })
   }
 }
-
