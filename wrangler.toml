@@ -1,0 +1,6 @@
+account_id = "ac2dd89af834dd17d7f5cf5df3789f08"
+name = "s-magiccap-workers"
+type = "webpack"
+route = "*s.magiccap.me/*"
+workers_dev = false
+zone_id = "b60c545cf953f38ca6726d9c4db4a590"

@@ -1,0 +1,8 @@
+{
+  "name": "s-magiccap-workers",
+  "version": "1.0.0",
+  "description": "s.magiccap but using Cloudflare Workers!",
+  "main": "index.js",
+  "author": "Jake Gealer <jake@gealer.email>",
+  "license": "MPL-2.0"
+}

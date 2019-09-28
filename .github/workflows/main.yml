@@ -1,0 +1,22 @@
+name: Deploy to Cloudflare Workers
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: Install Wrangler
+      run: sudo npm install -g @cloudflare/wrangler
+
+    - name: Publish to Cloudflare
+      run: wrangler publish
+      env:
+        CF_EMAIL: ${{ secrets.CF_EMAIL }}
+        CF_API_KEY: ${{ secrets.CF_API_KEY }}
