@@ -4,8 +4,6 @@ type = "webpack"
 route = "*s.magiccap.me/*"
 workers_dev = false
 zone_id = "b60c545cf953f38ca6726d9c4db4a590"
-
-[env.production]
 kv-namespaces = [
     { binding = "LINKS", id = "7ba7e0be57d84fa5ad92c6ecfe22b240" }
 ]
