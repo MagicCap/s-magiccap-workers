@@ -28,7 +28,11 @@ async function handleRequest(request) {
   }
   const url = await LINKS.get(u.pathname.substr(1))
   if (url) {
-    return Response.redirect(url)
+    try {
+      return Response.redirect(url)
+    } catch (_) {
+      return new Response("URL given is invalid.", { status: 400, headers: {"Access-Control-Allow-Origin": "*"}, })
+    }
   } else {
     return new Response("Link not found.", { status: 404, headers: {"Access-Control-Allow-Origin": "*"}, })
   }
